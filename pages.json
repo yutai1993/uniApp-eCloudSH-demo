@@ -1,0 +1,86 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "云购物"
+			}
+		}, {
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "商品分类",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/member/member",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索中心",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/goods-list/goods-list",
+			"style": {
+				"navigationBarTitleText": "商品列表",
+				"enablePullDownRefresh": true
+
+			}
+
+		}, {
+			"path": "pages/goods-detail/goods-detail",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": { // 全局配置
+		"navigationBarTextStyle": "white", // 导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+		"navigationBarTitleText": "云购物", // 导航栏标题文字内容
+		"navigationBarBackgroundColor": "#eb4450", // 导航栏背景颜色（同状态栏背景色）
+		"backgroundColor": "#F8F8F8" // 下拉显示出来的窗口的背景色
+	},
+	"tabBar": {
+		"list": [{
+			"text": "首页", // 文字
+			"pagePath": "pages/index/index", // 页面链接
+			"iconPath": "./static/icon/home.png", // 没有选中时的图片
+			"selectedIconPath": "./static/icon/home-active.png" // 选中时的状态图片
+		}, {
+			"text": "分类",
+			"pagePath": "pages/category/category",
+			"iconPath": "./static/icon/category.png",
+			"selectedIconPath": "./static/icon/category-o.png"
+		}, {
+			"text": "购物车",
+			"pagePath": "pages/cart/cart",
+			"iconPath": "./static/icon/cart.png",
+			"selectedIconPath": "./static/icon/cart-active.png"
+		}, {
+			"text": "会员",
+			"pagePath": "pages/member/member",
+			"iconPath": "./static/icon/member.png",
+			"selectedIconPath": "./static/icon/member-active.png"
+		}]
+	}
+}
